@@ -4,10 +4,15 @@
             [codeprix.handler :refer :all]))
 
 (deftest test-app
-  (testing "main route"
-    (let [response (app (mock/request :get "/"))]
+  (testing "name route"
+    (let [response (app (mock/request :get "/name/Jyo"))]
       (is (= (:status response) 200))
-      (is (= (:body response) "Hello World"))))
+      (is (= (:body response) "Hello Jyo"))))
+
+  (testing "add route"
+    (let [reposnse (app (mock/request :get "/add/1/2"))]
+      (is (= (:status reposnse) 200))
+      (is (= (:body reposnse) "3"))))
 
   (testing "not-found route"
     (let [response (app (mock/request :get "/invalid"))]
