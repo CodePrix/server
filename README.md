@@ -1,14 +1,21 @@
 # CodePrix
 
-*Better docs coming soon.*
+**Better docs coming soon.**
 
-## Running CodePrix
-- Install go (https://golang.org/dl/) Preferably install via package managers like brew, apt or yum.
-- set the env variable GOPATH to some accesible location.
-- run ``` go get github.com/kataras/iris ```
-- run ``` go build server.go ```
-- run ``` ./server ``` to start the app on port 8080.
+## Prerequisites
+
+You will need [Leiningen][] 2.0.0 or above installed.
+
+[leiningen]: https://github.com/technomancy/leiningen
+
+## Running
+
+To start a web server for the application, run:
+
+    lein ring server
+
+The app will run on port 3000 by default
 
 ## TODO
 - better docs!
-- then the rest.
+- rest of the stuff.
