@@ -1,6 +1,6 @@
 (defproject codeprix "0.1.0-SNAPSHOT"
   :description "The Server Code for CodePrix"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/JyotsnaGorle/CodePrix"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [compojure "1.5.1"]
